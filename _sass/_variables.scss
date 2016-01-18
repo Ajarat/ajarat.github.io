@@ -1,0 +1,60 @@
+//== Variables
+
+// Typography
+
+$base-font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-weight: 400;
+
+$font-size-base:   16px;
+$font-size-small:  $font-size-base - 2;
+$font-size-large:  $font-size-base+2;
+
+$base-line-height: 1.4;
+
+// Colors
+
+$brand-primary:    #8BC7B8;
+$brand-success:    #A7BE54;
+$brand-warning:    #EF934E;
+$brand-danger:     #E05C4A;
+$brand-neutral:    #FFF9E2;
+
+$gray-base:        #42534F;
+$gray-light:       lighten($gray-base, 20%);
+$gray-dark:        darken($gray-base, 20%);
+
+$text-color:       $brand-neutral;
+$background-color: $brand-primary;
+
+// Width of the content area
+
+$content-width:    940px;
+
+$on-phone:         480px;
+$on-tablet:        640px;
+$on-laptop:        800px;
+
+$spacing-unit:     30px;
+
+// Margins & Padding
+
+$margin-large:     10px;
+$margin-small:     5px;
+
+$padding-large:    10px;
+$padding-small:    5px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
