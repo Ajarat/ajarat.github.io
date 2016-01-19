@@ -13,13 +13,14 @@ $base-line-height: 1.4;
 
 // Colors
 
-$brand-primary:    #8BC7B8;
-$brand-success:    #A7BE54;
-$brand-warning:    #EF934E;
-$brand-danger:     #E05C4A;
-$brand-neutral:    #FFF9E2;
+$brand-primary:    #8bc7b8;
+$brand-success:    #a7Be54;
+$brand-warning:    #ef934e;
+$brand-danger:     #e05c4a;
+$brand-neutral:    #fff9e2;
+$brand-dark:       #6f6c63;
 
-$gray-base:        #42534F;
+$gray-base:        #42534f;
 $gray-light:       lighten($gray-base, 20%);
 $gray-dark:        darken($gray-base, 20%);
 

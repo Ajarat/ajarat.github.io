@@ -2,11 +2,46 @@
 layout: default
 ---
 
-<div class="home">
+{% include header.html %}
 
-  <h1 class="page-heading">Posts</h1>
+<!-- Title Section -->
+<section class="container title-section">
 
-  <ul class="post-list">
+  <h1>
+    <span>A</span>
+    <span>j</span>
+    <span>a</span>
+    <span>r</span>
+    <span>a</span>
+    <span>t</span>
+    <span>.</span>
+    <span>i</span>
+    <span>o</span>
+  </h1>
+  <h2>The portfolio of Morgan Jeffrey</h2>
+  <button><i class="i-download-o"></i> My Resume</button>
+
+</section>
+
+<!-- Description Section -->
+<section class="container description-section">
+
+  <h3>I am a <span>Web Designer</span> and <span>UI Developer</span></h3>
+  <p>Self-taught with 10+ years in the industry. Passionate about creating clean, vibrant, and user-friendly websites.</p>
+
+</section>
+
+<!-- Skills Section -->
+<section class="container skills-section">
+
+  <h3>I am a <span>Web Designer</span> and <span>UI Developer</span></h3>
+  <p>Self-taught with 10+ years in the industry. Passionate about creating clean, vibrant, and user-friendly websites.</p>
+
+</section>
+
+{% include footer.html %}
+
+<!-- <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -18,6 +53,4 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

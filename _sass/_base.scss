@@ -105,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $text-color;
   text-decoration: underline;
+  transition: .4s;
 
   &:visited {
     color: darken($text-color, 5%);
@@ -112,9 +113,42 @@ a {
 
   &:hover {
     color: lighten($text-color, 5%);
-    transition: .2s;
+    transition: .1s;
   }
   
+}
+
+
+/**
+ * Buttons
+ */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  height: auto;
+  margin: 0;
+  padding: $padding-small*3 ($padding-large*2)+1;
+  background-color: darken($brand-primary, 35%);
+  border: 1px solid darken($brand-primary, 35%);
+  border-radius: 10px;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  color: $brand-neutral;
+  transition: .4s;
+  
+  &:hover,
+  &:focus {
+    background-color: darken($brand-primary, 25%);
+    border-color: darken($brand-primary, 25%);
+    color: #fff;
+    transition: .1s;
+  }
+
 }
 
 

@@ -1,0 +1,41 @@
+/*
+  Icon Font: ajarat
+*/
+
+@font-face {
+  font-family: "ajarat";
+  src: url("../fonts/ajarat.eot");
+  src: url("../fonts/ajarat.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ajarat.woff") format("woff"),
+       url("../fonts/ajarat.ttf") format("truetype"),
+       url("../fonts/ajarat.svg#ajarat") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "ajarat";
+    src: url("../fonts/ajarat.svg#ajarat") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.i-download-o:before {
+  display: inline-block;
+  font-family: "ajarat";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.i-download-o:before { content: "\f100"; }
