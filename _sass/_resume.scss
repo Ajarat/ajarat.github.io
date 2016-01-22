@@ -143,4 +143,20 @@ section.container {
     font-size: $font-size-base;
   }
   
+  .i-git,
+  .i-bootstrap,
+  .i-foundation {
+    font-size: 30px;
+  }
+  
+  h6 {
+    margin-bottom: $margin-large;
+  }
+  
+  .i-circle {
+    font-size: $font-size-small;
+    line-height: 1;
+    color: darken($brand-success, 7%);
+  }
+  
 }
