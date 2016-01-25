@@ -1,3 +1,4 @@
+section,
 section.container {
   padding: $padding-large*6 $padding-large*2;
 }
@@ -78,6 +79,10 @@ section.container {
   background-color: $brand-success;
   text-align: center;
   
+  h4, h5, h6 {
+    line-height: 1;
+  }
+  
   h3 {
     margin-bottom: $margin-large*3;
     font-size: $font-size-large;
@@ -107,7 +112,7 @@ section.container {
   }
   
   h4 {
-    margin: $margin-small auto $margin-large*2;
+    margin: $margin-small auto $margin-large*2.5;
     font-size: 24px;
     
     span {
@@ -139,7 +144,7 @@ section.container {
   }
   
   h5 {
-    margin: $margin-small auto $margin-large*2;
+    margin: $margin-small auto $margin-large*2.5;
     font-size: $font-size-base;
   }
   
@@ -149,14 +154,204 @@ section.container {
     font-size: 30px;
   }
   
-  h6 {
-    margin-bottom: $margin-large;
-  }
-  
   .i-circle {
-    font-size: $font-size-small;
+    display: block;
+    margin-bottom: $margin-large*2;
+    font-size: $font-size-small - 2;
     line-height: 1;
     color: darken($brand-success, 7%);
+  }
+  
+  h6 {
+    margin-bottom: $margin-large*2;
+    font-size: $font-size-small;
+  }
+  
+  p {
+    margin-bottom: $margin-large;
+    font-size: $font-size-base - 2;
+    color: lighten(saturate($brand-success, 30%), 15%);
+  }
+  
+  .row:last-child {
+    
+    h6 {
+      margin: 0;
+    }
+    
+  }
+  
+}
+
+
+// Job Section
+
+.job-section {
+  background-color: darken($brand-primary, 35%);
+  
+  h3 {
+    margin-bottom: $margin-large*3;
+    font-size: $font-size-large;
+    text-align: center;
+    color: $brand-primary;
+    
+    span {
+      font-size: 32px;
+      color: $brand-neutral;
+    }
+    
+  }
+  
+  .accordion.js {
+    
+    > * {
+      overflow: hidden;
+      
+      &:not(.expanded) > *:not(h5) {
+        max-height: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
+      
+      > h5 {
+        cursor: pointer;
+        visibility: visible;
+      }
+      
+      > *:not(h5) {
+        transition: max-height .2s, visibility .2s, margin .2s, opacity .2s;
+      }
+      
+    }
+    
+    .expanded {
+      
+      > *:not(h5) {
+        max-height: auto;
+        opacity: 1;
+        visibility: visible;
+      }
+      
+    }
+    
+  }
+  
+}
+
+
+// Education Section
+
+.education-section {
+  background-color: $brand-warning;
+  
+  h3 {
+    margin-bottom: $margin-large*3;
+    font-size: $font-size-large;
+    text-align: center;
+    color: darken($brand-warning, 25%);
+    
+    span {
+      font-size: 32px;
+      color: $brand-neutral;
+    }
+    
+  }
+  
+  h4 {
+    margin-bottom: 0;
+    font-size: $font-size-large+2;
+    text-align: center;
+    color: darken($brand-danger, 15%);
+    
+    span {
+      display: block;
+      
+      &:first-child {
+        color: $brand-neutral;
+      }
+      
+      &:nth-child(2) {
+        font-size: $font-size-large;
+        color: saturate(lighten($brand-warning, 18%), 30%);
+      }
+      
+      &:last-child {
+        font-size: $font-size-base;
+        color: darken($brand-danger, 5%);
+      }
+      
+    }
+    
+  }
+  
+}
+
+
+// Connect Section
+
+.connect-section {
+  background-color: $brand-neutral;
+  text-align: center;
+  
+  h3 {
+    margin-bottom: $margin-large*3;
+    font-size: $font-size-large;
+    text-align: center;
+    color: desaturate(darken($brand-primary, 30%), 10%);
+    
+    span {
+      font-size: 32px;
+      color: $brand-danger;
+    }
+    
+  }
+  
+  a {
+    margin: 0 $margin-small;
+    font-size: 55px;
+    text-decoration: none;
+    color: desaturate(darken($brand-primary, 30%), 10%);
+    
+    &:hover {
+      color: darken($brand-primary, 15%);
+    }
+    
+  }
+  
+}
+
+
+// Credits Section
+
+.credits-section {
+  background-color: $brand-danger;
+  
+  h3 {
+    margin-bottom: $margin-large*3;
+    font-size: $font-size-large;
+    text-align: center;
+    color: darken($brand-danger, 30%);
+    
+    span {
+      font-size: 32px;
+      color: $brand-neutral;
+    }
+    
+  }
+  
+  li {
+    text-align: center;
+  }
+  
+  a {
+    color: saturate(lighten($brand-warning, 10%), 50%);
+    
+    &:hover {
+      color: saturate(lighten($brand-warning, 15%), 50%);
+    }
+    
   }
   
 }
