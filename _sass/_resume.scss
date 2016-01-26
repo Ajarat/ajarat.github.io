@@ -347,7 +347,7 @@
       &:hover {
         background-color: saturate(darken($brand-primary, 50%), 15%);
         border: 1px solid saturate($brand-primary, 10%);
-        transition: background .1s, border .1s;
+        transition: background .2s, border .2s;
       }
       
       p {
