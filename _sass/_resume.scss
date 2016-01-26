@@ -362,12 +362,9 @@
         max-height: 0;
         margin-top: 0;
         margin-bottom: 0;
-        opacity: 0;
-        visibility: hidden;
       }
       
       > h5 {
-        visibility: visible;
         margin-bottom: 0;
         padding: ($margin-large - 1) $margin-large+4;
         cursor: pointer;
@@ -391,7 +388,7 @@
       }
       
       > *:not(h5) {
-        transition: max-height .2s, visibility .2s, margin .2s, opacity .2s;
+        transition: max-height .2s margin .2s;
       }
       
     }
@@ -400,8 +397,6 @@
       
       > *:not(h5) {
         max-height: auto;
-        opacity: 1;
-        visibility: visible;
       }
       
     }
