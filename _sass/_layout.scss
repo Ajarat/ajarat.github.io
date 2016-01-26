@@ -18,6 +18,7 @@ header {
     a,
     a:visited {
       font-size: $font-size-base;
+      font-weight: 500;
       text-decoration: none;
       color: lighten(saturate($brand-primary, 20%), 20%);
       
