@@ -388,7 +388,7 @@
       }
       
       > *:not(h5) {
-        transition: max-height .2s margin .2s;
+        transition: max-height .2s, margin .2s;
       }
       
     }
