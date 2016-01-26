@@ -48,7 +48,6 @@
     margin-top: $margin-large*6;
     margin-bottom: 0;
     font-size: 42px;
-    font-weight: 500;
     letter-spacing: -2px;
     color: $brand-neutral;
   }
@@ -57,7 +56,6 @@
     margin-top: -($margin-small - 2);
     margin-bottom: $margin-large*12;
     font-size: $font-size-base;
-    font-weight: 500;
     letter-spacing: 1px;
     color: darken($brand-primary, 35%);
   }
