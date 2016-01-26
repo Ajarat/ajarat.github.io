@@ -311,7 +311,7 @@ input[type="button"] {
   height: auto;
   margin: 0;
   padding: $padding-small*3 ($padding-large*2)+1;
-  background-color: darken(saturate($brand-primary, 5%), 35%);
+  background-color: desaturate(darken($brand-primary, 30%), 10%);
   border: none;
   border-radius: 10px;
   font-size: $font-size-base;
@@ -323,7 +323,7 @@ input[type="button"] {
   
   &:hover,
   &:focus {
-    background-color: darken(saturate($brand-primary, 15%), 20%);
+    background-color: darken($brand-primary, 15%);
     color: #fff;
     transition: .1s;
   }

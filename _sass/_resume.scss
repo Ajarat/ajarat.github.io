@@ -26,7 +26,7 @@ section.container {
   
   h2 {
     margin-top: -($margin-small - 2);
-    margin-bottom: $margin-large*10;
+    margin-bottom: $margin-large*12;
     font-size: $font-size-base;
     letter-spacing: 1px;
     color: darken($brand-primary, 35%);
@@ -156,7 +156,7 @@ section.container {
   
   .i-circle {
     display: block;
-    margin-bottom: $margin-large*2;
+    margin-bottom: ($margin-large*2)+2;
     font-size: $font-size-small - 2;
     line-height: 1;
     color: darken($brand-success, 7%);
@@ -202,10 +202,61 @@ section.container {
     
   }
   
+  h4 {
+    font-size: $font-size-large+2;
+    color: saturate(lighten($brand-warning, 5%), 20%);
+    
+    span {
+      
+      &:first-child {
+        display: inline-block;
+        color: $brand-neutral;
+      }
+      
+      &:nth-child(2) {
+        display: block;
+        font-size: $font-size-large;
+        color: $brand-primary;
+      }
+      
+      &:last-child {
+        display: block;
+        font-size: $font-size-large;
+        color: darken($brand-primary, 15%);
+      }
+      
+    }
+    
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
   .accordion.js {
     
     > * {
+      margin-bottom: $margin-large;
       overflow: hidden;
+      background-color: saturate(darken($brand-primary, 45%), 15%);
+      border: 1px solid saturate(lighten($brand-primary, 5%), 10%);
+      border-radius: 5px;
+      color: saturate(lighten($brand-warning, 5%), 20%);
+      transition: background .8s, border .8s;
+      
+      &:hover {
+        background-color: saturate(darken($brand-primary, 50%), 15%);
+        border: 1px solid saturate($brand-primary, 10%);
+        transition: background .1s, border .1s;
+      }
+      
+      p {
+        margin-bottom: $margin-large;
+        padding: 0 $margin-large+4;
+        font-size: $font-size-small+1;
+        line-height: 1.4;
+        color: $brand-neutral;
+      }
       
       &:not(.expanded) > *:not(h5) {
         max-height: 0;
@@ -216,8 +267,26 @@ section.container {
       }
       
       > h5 {
-        cursor: pointer;
         visibility: visible;
+        margin-bottom: 0;
+        padding: ($margin-large - 1) $margin-large+4;
+        cursor: pointer;
+        
+        span {
+          
+          &:first-child {
+            display: inline-block;
+            color: $brand-neutral;
+          }
+          
+          &:last-child {
+            display: block;
+            font-size: $font-size-base;
+            color: $brand-primary;
+          }
+          
+        }
+        
       }
       
       > *:not(h5) {
