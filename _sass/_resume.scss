@@ -169,6 +169,12 @@
   h4 {
     margin: $margin-small auto $margin-large*2.5;
     font-size: 24px;
+    transition: color .8s;
+    
+    &:hover {
+      color: lighten(saturate($brand-success, 30%), 15%);
+      transition: color .1s;
+    }
     
     span {
       color: lighten($brand-success, 15%);
@@ -201,31 +207,35 @@
   h5 {
     margin: $margin-small auto $margin-large*2.5;
     font-size: $font-size-base;
+    transition: color .8s;
+    
+    &:hover {
+      color: lighten(saturate($brand-success, 30%), 15%);
+      transition: color .1s;
+    }
+    
   }
   
-  .i-git,
-  .i-bootstrap,
-  .i-foundation {
-    font-size: 30px;
+  li {
+    margin: 0 5%;
   }
   
   h6 {
-    margin-bottom: $margin-large*2;
-    font-size: $font-size-small;
-  }
-  
-  .i-circle {
-    display: block;
-    margin-bottom: ($margin-large*2)+2;
-    font-size: $font-size-small - 2;
-    line-height: 1;
-    color: darken($brand-success, 7%);
+    margin-bottom: $margin-large*2.5;
+    font-size: $font-size-small+1;
+    transition: color .8s;
+    
+    &:hover {
+      color: lighten(saturate($brand-success, 30%), 15%);
+      transition: color .1s;
+    }
+    
   }
   
   p {
-    margin-bottom: $margin-large;
+    margin-bottom: $margin-small;
     font-size: $font-size-base - 2;
-    color: lighten(saturate($brand-success, 30%), 15%);
+    color: darken(saturate($brand-success, 30%), 25%);
   }
   
   .row:last-child {
@@ -271,11 +281,6 @@
     h6 {
       margin-bottom: $margin-large*3.5;
       font-size: $font-size-base+1;
-    }
-    
-    .i-circle {
-      margin-bottom: ($margin-large*3)+2;
-      font-size: $font-size-base;
     }
     
     p {
