@@ -2,6 +2,15 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-fluid,
+.container {
+  
+  &.dual {
+    padding: 0;
+  }
+  
+}
+
 .container-fluid {
   position: relative;
   width: 100%;
@@ -12,20 +21,16 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  
-  &.dual {
-    padding: 0;
-  }
-  
 }
 
 .row {
   width: 100%;
-  max-width: 960px;
+  max-width: 800px;
+  margin: 0 auto;
   
   &:after {
     display: table;
@@ -54,28 +59,26 @@
    
 }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  
-  .container {
-    width: 85%;
-    padding: 0; 
-  }
-    
-}
-
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  
-  .container {
-    width: 80%;
-  }
   
   .columns {
     margin-left: 4%;
     
     &:first-child {
       margin-left: 0;
+    }
+    
+    &.one-third {
+      width: percentage(1/3) - (8/3);
+    }
+    
+    &.two-thirds {
+      width: percentage(2/3);
+    }
+    
+    &.one-half {
+      width: percentage(1/2) - 2;
     }
     
     &.one {
@@ -91,7 +94,7 @@
     }
     
     &.four {
-      width: 30.6666666667%;
+      width: percentage(1/3) - (8/3);
     }
     
     &.five {
@@ -213,6 +216,27 @@ img {
   vertical-align: middle;
 }
 
+
+/**
+ * Div Tables
+ */
+ .div-table {
+   display: table;
+   
+   &.div-table-width {
+     width: 100%;
+   }
+   
+ }
+
+ .div-table-row {
+   display: table-row;
+ }
+
+ .div-table-cell {
+   display: table-cell;
+   vertical-align: middle;
+ }
 
 
 /**

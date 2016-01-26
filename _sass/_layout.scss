@@ -27,12 +27,29 @@ nav {
     
   }
   
+  @include media-query($on-phone) {
+    
+    ul {
+      
+      li {
+        margin: 0 4%;
+        
+        a {
+          font-size: $font-size-base;
+        }
+        
+      }
+      
+    }
+    
+  }
+  
 }
 
 
 // Footer
 
-footer.container {
+footer.container-fluid {
   padding: $padding-large 0;
   background-color: darken($brand-primary, 45%);
   

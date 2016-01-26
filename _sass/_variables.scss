@@ -29,7 +29,7 @@ $background-color: $brand-primary;
 
 // Width of the content area
 
-$content-width:    940px;
+$content-width:    800px;
 
 $on-phone:         480px;
 $on-tablet:        640px;
@@ -55,7 +55,7 @@ $padding-small:    5px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
