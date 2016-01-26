@@ -1,38 +1,46 @@
 // Header
 
-nav {
-  text-align: center;
-  
-  ul {
-    margin: $margin-large auto;
+header {
+  background-color: darken($brand-primary, 3%);
+
+  nav {
+    text-align: center;
     
-    li {
-      margin: 0 3%;
+    ul {
+      margin: $margin-large auto;
       
-      a {
-        font-size: $font-size-small;
-        text-decoration: none;
-        
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          text-decoration: none;
-          color: darken($brand-primary, 35%);
-        }
-        
+      li {
+        margin: 0 7%;
       }
       
     }
     
-  }
-  
-  @include media-query($on-phone) {
-    
-    ul {
+    a {
+      font-size: $font-size-base;
+      text-decoration: none;
+      color: lighten(saturate($brand-primary, 20%), 20%);
       
-      li {
-        margin: 0 4%;
+      &:hover,
+      &:active,
+      &:focus,
+      &.active {
+        text-decoration: none;
+        color: #fff;
+      }
+      
+    }
+    
+    @include media-query($on-phone) {
+      
+      nav {
+        
+        ul {
+          
+          li {
+            margin: 0 4%;
+          }
+          
+        }
         
         a {
           font-size: $font-size-base;
@@ -43,7 +51,7 @@ nav {
     }
     
   }
-  
+
 }
 
 

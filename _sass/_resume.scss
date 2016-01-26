@@ -50,13 +50,7 @@
     font-size: 40px;
     font-weight: 500;
     letter-spacing: -2px;
-    transition: all .8s;
-    
-    span:hover {
-      color: #fff;
-      transition: all .1s;
-    }
-    
+    color: $brand-neutral;
   }
   
   h2 {
