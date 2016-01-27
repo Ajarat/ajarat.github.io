@@ -269,7 +269,7 @@
     
     h5 {
       margin: $margin-small+3 auto $margin-large*3.5;
-      font-size: $font-size-large+1;
+      font-size: $font-size-large+2;
     }
     
     .i-git,
@@ -280,7 +280,7 @@
     
     h6 {
       margin-bottom: $margin-large*3.5;
-      font-size: $font-size-base+1;
+      font-size: $font-size-large;
     }
     
     p {
@@ -506,7 +506,7 @@
 
 // Connect/Credits Dual
 
-@include media-query($on-tablet) {
+@include media-query($on-laptop) {
   
   .connect-credits {
     display: table;
@@ -519,6 +519,7 @@
     
     section {
       display: table-cell;
+      float: none;
       width: 50% !important;
       margin: 0;
     }
@@ -551,6 +552,19 @@
     
     &:hover {
       color: darken($brand-primary, 15%);
+    }
+    
+  }
+  
+  @include media-query($on-laptop) {
+    
+    &.columns {
+      padding-right: $padding-large*5;
+    }
+    
+    h3,
+    .columns {
+      text-align: right;
     }
     
   }
@@ -589,6 +603,19 @@
     
     a {
       font-size: $font-size-large;
+    }
+    
+  }
+  
+  @include media-query($on-laptop) {
+    
+    &.columns {
+      padding-left: $padding-large*5;
+    }
+    
+    h3,
+    li {
+      text-align: left;
     }
     
   }

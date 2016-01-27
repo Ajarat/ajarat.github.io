@@ -181,7 +181,7 @@ layout: default
   <div class="container-fluid dual connect-credits">
     <div class="row">
     
-      <section class="six columns connect-section">
+      <section class="twelve columns connect-section">
         
         <div class="row">
           <div class="twelve columns">
@@ -211,7 +211,7 @@ layout: default
         
       </section>
       
-      <section class="six columns credits-section">
+      <section class="twelve columns credits-section">
         
         <div class="row">
           <div class="twelve columns">
@@ -246,6 +246,12 @@ layout: default
               <li>
                 <a href="#">Font Awesome</a>
               </li>
+              <li>
+                <a href="#">Pizza</a>
+              </li>
+              <li>
+                <a href="javascript:randomlink()">Craft Beer</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -257,11 +263,11 @@ layout: default
 
 </div>
 
-<!-- Accordion Functionality -->
-<script>
-  {% include accordion.js %}
-</script>
+<!-- Scripts -->
+<script>{% include accordion.js %}</script>
+<script>{% include random-link.js %}</script>
 
+<!-- Footer -->
 {% include footer.html %}
 
 <!-- <ul class="post-list">
