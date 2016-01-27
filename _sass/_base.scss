@@ -403,7 +403,7 @@ pre {
 
 
 /**
- * Clearfix
+ * Helper Classes
  */
 %clearfix {
 
@@ -413,4 +413,8 @@ pre {
     clear: both;
   }
     
+}
+
+.hidden {
+  display: none;
 }

@@ -58,22 +58,12 @@
         transition: color .1s;
       }
       
-      &:nth-child(1):hover,
-      &:nth-child(4):hover,
-      &:nth-child(7):hover {
-        color: $brand-success;
+      &:nth-child(odd):hover {
+        color: lighten(saturate($brand-success, 20%), 10%);
       }
       
-      &:nth-child(2):hover,
-      &:nth-child(5):hover,
-      &:nth-child(8):hover {
+      &:nth-child(even):hover {
         color: lighten(saturate($brand-primary, 50%), 15%);
-      }
-      
-      &:nth-child(3):hover,
-      &:nth-child(6):hover,
-      &:nth-child(9):hover {
-        color: darken(saturate($brand-primary, 10%), 25%);
       }
       
     }
@@ -648,9 +638,21 @@
     
   }
   
+  li {
+    position: relative;
+    margin-bottom: 0;
+    
+    span {
+      display: none;
+    }
+    
+  }
+  
   a {
-    margin: 0 $margin-small;
-    font-size: 55px;
+    display: block;
+    margin: $margin-large;
+    font-size: 60px;
+    line-height: 1;
     text-decoration: none;
     color: desaturate(darken($brand-primary, 30%), 10%);
     
@@ -660,10 +662,31 @@
     
   }
   
+  @include media-query(370px) {
+    
+    ul {
+      width: 75%;
+      margin: 0 auto;
+    }
+    
+  }
+  
+  @include media-query($on-phone) {
+    
+    ul {
+      width: 65%;
+    }
+    
+  }
+  
   @include media-query($on-tablet) {
     
+    ul {
+      width: 100%;
+    }
+    
     a {
-      font-size: 60px;
+      font-size: 65px;
     }
     
   }
@@ -677,6 +700,63 @@
     h3,
     .columns {
       text-align: right;
+    }
+    
+    ul.list-inline {
+      float: right;
+      width: 170px;
+      
+      li {
+        display: block;
+        
+        span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          margin-top: -13px;
+          font-size: $font-size-small;
+          color: darken($brand-primary, 15%);
+          opacity: 0;
+          transition: opacity .8s;
+          pointer-events: none;
+        }
+        
+        &:nth-child(odd) {
+          text-align: right;
+          
+          span {
+            right: 80px;
+            text-align: right;
+          }
+          
+        }
+        
+        &:nth-child(even) {
+          text-align: left;
+          
+          span {
+            left: 80px;
+            text-align: left;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+    a {
+      margin: 0;
+      
+      &:hover {
+        
+        + span {
+          opacity: 1 !important;
+          transition: opacity .1s;
+        }
+        
+      }
+      
     }
     
   }
