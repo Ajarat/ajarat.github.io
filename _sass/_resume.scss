@@ -25,10 +25,10 @@
     
     h3 {
       margin-bottom: $margin-large*4;
-      font-size: 24px;
+      font-size: 22px;
       
       span {
-        font-size: 40px;
+        font-size: 36px;
       }
       
     }
@@ -50,6 +50,34 @@
     font-size: 42px;
     letter-spacing: -2px;
     color: $brand-neutral;
+    
+    span {
+      transition: color .8s;
+      
+      &:hover {
+        transition: color .1s;
+      }
+      
+      &:nth-child(1):hover,
+      &:nth-child(4):hover,
+      &:nth-child(7):hover {
+        color: $brand-success;
+      }
+      
+      &:nth-child(2):hover,
+      &:nth-child(5):hover,
+      &:nth-child(8):hover {
+        color: lighten(saturate($brand-primary, 50%), 15%);
+      }
+      
+      &:nth-child(3):hover,
+      &:nth-child(6):hover,
+      &:nth-child(9):hover {
+        color: darken(saturate($brand-primary, 10%), 25%);
+      }
+      
+    }
+    
   }
   
   h2 {
@@ -70,6 +98,19 @@
     h2 {
       margin-bottom: $margin-large*15;
       font-size: $font-size-large;
+    }
+    
+  }
+  
+  @include media-query($on-tablet) {
+    
+    h1 {
+      font-size: 60px;
+    }
+    
+    h2 {
+      margin-bottom: $margin-large*17;
+      font-size: $font-size-large+3;
     }
     
   }
@@ -290,6 +331,23 @@
     
   }
   
+  @include media-query($on-tablet) {
+    
+    .sass-skills {
+      width: 145px;
+      height: 69px;
+    }
+    
+    h4 {
+      font-size: $font-size-large+1;
+    }
+    
+    h5 {
+      font-size: $font-size-large+1;
+    }
+    
+  }
+  
 }
 
 
@@ -372,6 +430,7 @@
       > h5 {
         margin-bottom: 0;
         padding: ($margin-large - 1) $margin-large+4;
+        font-size: $font-size-large;
         cursor: pointer;
         
         span {
@@ -424,6 +483,51 @@
             
             &:last-child {
               display: inline-block;
+            }
+            
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+  @include media-query($on-tablet) {
+    
+    h4 {
+      
+      span {
+        
+        &:first-child {
+          margin-left: $margin-small;
+        }
+        
+        &:nth-child(2) {
+          font-size: $font-size-large+2;
+        }
+        
+      }
+      
+    }
+    
+    .accordion.js {
+      
+      > * {
+        
+        > h5 {
+          
+          span {
+            
+            &:first-child {
+              margin: 0 $margin-small;
+              font-size: $font-size-large;
+            }
+            
+            &:last-child {
+              font-size: $font-size-large;
             }
             
           }
@@ -552,6 +656,14 @@
     
     &:hover {
       color: darken($brand-primary, 15%);
+    }
+    
+  }
+  
+  @include media-query($on-tablet) {
+    
+    a {
+      font-size: 60px;
     }
     
   }

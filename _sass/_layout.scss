@@ -51,6 +51,15 @@ header {
       
     }
     
+    @include media-query($on-tablet) {
+      
+      a,
+      a:visited {
+        font-size: $font-size-large;
+      }
+      
+    }
+    
   }
 
 }
