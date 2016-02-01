@@ -189,6 +189,12 @@ body {
   image-rendering: optimizeQuality;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  &.blog {
+    background-color: $brand-neutral;
+    color: $gray-base;
+  }
+  
 }
 
 

@@ -1,0 +1,16 @@
+.blog {
+  
+  a {
+    color: $brand-primary;
+    
+    &:visited {
+      color: $brand-primary
+    }
+    
+    &:hover {
+      color: darken(saturate($brand-primary, 15%), 25%);
+    }
+    
+  }
+  
+}

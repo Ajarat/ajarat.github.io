@@ -338,6 +338,31 @@
     
   }
   
+  @include media-query($on-laptop) {
+    
+    .sass-skills {
+      width: 145px;
+      height: 69px;
+    }
+    
+    h4 {
+      font-size: 22px;
+    }
+    
+    h5 {
+      font-size: 22px;
+    }
+    
+    h6 {
+      font-size: $font-size-large+2;
+    }
+    
+    p {
+      font-size: $font-size-large;
+    }
+
+  }
+  
 }
 
 
