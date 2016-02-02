@@ -1,14 +1,63 @@
 .blog {
   
-  a {
+  // Blog Styles
+  
+  a,
+  a:visited {
     color: $brand-primary;
-    
-    &:visited {
-      color: $brand-primary
-    }
     
     &:hover {
       color: darken(saturate($brand-primary, 15%), 25%);
+    }
+    
+  }
+  
+  
+  // Blog Header
+  
+  header {
+    background-color: lighten($brand-neutral, 4%);
+    
+    nav {
+      
+      ul.list-inline {
+        
+        li {
+          margin: 0 7%;
+        }
+        
+      }
+      
+      a,
+      a:visited {
+        color: lighten(saturate($brand-dark, 10%), 20%);
+        
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+          color: darken(saturate($brand-dark, 15%), 5%);
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+  
+  // Blog Footer
+  
+  footer.container-fluid {
+    background-color: lighten($brand-neutral, 4%);
+    
+    .columns {
+      color: lighten(saturate($brand-dark, 10%), 20%);
+      
+      span {
+        color: darken(saturate($brand-dark, 15%), 5%);
+      }
+      
     }
     
   }
