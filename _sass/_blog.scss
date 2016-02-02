@@ -2,14 +2,30 @@
   
   // Blog Styles
   
+  h1 {
+    margin-bottom: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .header-img {
+    margin: 0 (-($margin-large*2)) $margin-large*2;
+  }
+  
   a,
   a:visited {
-    color: $brand-primary;
+    color: darken($brand-primary, 20%);
     
     &:hover {
-      color: darken(saturate($brand-primary, 15%), 25%);
+      color: darken($brand-primary, 5%);
     }
     
+  }
+  
+  .post-meta {
+    font-size: $font-size-small;
+    text-align: center;
+    color: lighten(saturate($brand-dark, 10%), 10%);
   }
   
   
@@ -49,6 +65,7 @@
   // Blog Footer
   
   footer.container-fluid {
+    margin-top: $margin-large*2;
     background-color: lighten($brand-neutral, 4%);
     
     .columns {
