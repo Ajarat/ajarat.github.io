@@ -1,33 +1,79 @@
 .blog {
   
-  // Blog Styles
+  // Archive Styles
   
-  h1 {
-    margin-bottom: 0;
-    font-size: 22px;
-    text-align: center;
-  }
-  
-  .header-img {
-    margin: 0 (-($margin-large*2)) $margin-large*2;
-  }
-  
-  a,
-  a:visited {
-    color: darken($brand-primary, 20%);
+  .archive {
     
-    &:hover {
-      color: darken($brand-primary, 5%);
+    h1 {
+      margin: $margin-large*2;
+      font-size: $font-size-large+2;
+      text-align: center;
+      color: lighten(saturate($brand-dark, 10%), 30%);
+      
+      span {
+        font-size: 32px;
+        color: $brand-danger;
+      }
+      
+    }
+    
+    h2 {
+      margin-bottom: 0;
+      font-size: $font-size-large;
+      line-height: 1;
+      
+      a,
+      a:visited {
+        text-decoration: none;
+        color: $brand-dark;
+        
+        &:hover {
+          color: lighten($brand-dark, 10%);
+        }
+        
+      }
+      
+    }
+    
+    .post-meta {
+      font-size: $font-size-small;
+      text-align: center;
+      color: lighten(saturate($brand-dark, 10%), 30%);
     }
     
   }
   
-  .post-meta {
-    font-size: $font-size-small;
-    text-align: center;
-    color: lighten(saturate($brand-dark, 10%), 10%);
-  }
+  // Post Styles
   
+  .post {
+    
+    h1 {
+      margin-bottom: 0;
+      font-size: 22px;
+      text-align: center;
+    }
+    
+    .header-img {
+      margin: 0 (-($margin-large*2)) $margin-large*2;
+    }
+    
+    a,
+    a:visited {
+      color: darken($brand-primary, 20%);
+      
+      &:hover {
+        color: darken($brand-primary, 5%);
+      }
+      
+    }
+    
+    .post-meta {
+      font-size: $font-size-small;
+      text-align: center;
+      color: lighten(saturate($brand-dark, 10%), 10%);
+    }
+    
+  }
   
   // Blog Header
   
