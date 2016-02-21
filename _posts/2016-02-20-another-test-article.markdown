@@ -1,10 +1,10 @@
 ---
 layout: post
 
-title: "Welcome to Jekyll!"
-date: 2015-11-16 07:46:01 -0700
-categories: jekyll update
-tags: test
+title: "Another Test Article"
+date: 2016-02-20 16:14:00 -0700
+categories: testing
+tags: test, tag, thing
 
 header_img: "/assets/img/articles/test/cthulu-header.png"
 thumbnail: "/assets/img/articles/test/cthulu.png"

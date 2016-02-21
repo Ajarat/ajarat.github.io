@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $text-color;
   text-decoration: underline;
-  transition: .4s;
+  transition: color .8s;
 
   &:visited {
     color: darken($text-color, 5%);
@@ -321,7 +321,7 @@ a {
 
   &:hover {
     color: lighten($text-color, 5%);
-    transition: .1s;
+    transition: color .2s;
   }
   
 }
@@ -347,13 +347,13 @@ input[type="button"] {
   line-height: 1;
   text-transform: none;
   color: $brand-neutral;
-  transition: .4s;
+  transition: color .8s, background-color .8s;
   
   &:hover,
   &:focus {
     background-color: darken(saturate($brand-primary, 10%), 20%);
     color: #fff;
-    transition: .1s;
+    transition: color .2s, background-color .2s;
   }
 
 }
