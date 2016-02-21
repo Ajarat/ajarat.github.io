@@ -73,9 +73,19 @@
   h2 {
     margin-top: -($margin-small - 2);
     margin-bottom: $margin-large*12;
-    font-size: $font-size-base;
+    font-size: $font-size-base - 1;
     letter-spacing: 1px;
-    color: darken($brand-primary, 35%);
+    color: darken($brand-primary, 20%);
+    
+    strong {
+      color: darken($brand-primary, 25%);
+    }
+    
+    span {
+      font-size: $font-size-base;
+      color: darken($brand-primary, 35%);
+    }
+    
   }
   
   @include media-query($on-phone) {
@@ -88,6 +98,11 @@
     h2 {
       margin-bottom: $margin-large*15;
       font-size: $font-size-large;
+      
+      span {
+        font-size: $font-size-large+2;
+      }
+      
     }
     
   }
@@ -101,6 +116,15 @@
     h2 {
       margin-bottom: $margin-large*17;
       font-size: $font-size-large+3;
+      
+      br {
+        display: none;
+      }
+      
+      span {
+        font-size: $font-size-large+5;
+      }
+      
     }
     
   }
