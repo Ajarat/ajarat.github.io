@@ -695,6 +695,25 @@
       display: none;
     }
     
+    &.disabled {
+      
+      a {
+        opacity: .2;
+        cursor: default;
+        
+        &:hover {
+          color: desaturate(darken($brand-primary, 30%), 10%);
+          
+          + span {
+            display: none;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
   }
   
   a {

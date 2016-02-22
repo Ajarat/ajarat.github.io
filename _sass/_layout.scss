@@ -29,6 +29,11 @@ header {
         color: #fff;
       }
       
+      &.disabled {
+        opacity: .2;
+        cursor: text;
+      }
+      
     }
     
     @include media-query($on-phone) {
